@@ -15,5 +15,10 @@
   </tr>
   <tr>
     <td><a href="./Linux3-Automated_Operation/Week1/"> Week1</td>
+    <td>
+        <ol>
+            <li><a href="./Linux3-Automated_Operation/Week1/README.md#ftp-server-of-this-course">FTP server of this course</li>
+        </ol>
+    </td>
   </tr>
 </table>
