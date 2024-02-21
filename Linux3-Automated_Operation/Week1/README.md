@@ -53,6 +53,26 @@ make modules_install
 make install
 ```
 
+- `lsmod` : List all modules
+- `rmmod` : Remove module
+    - `rmmod [target_module_name]`
+- `modinfo` : Module's information
+## **Load module** 
+- Need to know target module's name
+- `updatedb`
+- `locate [target_modular].ko`
+- `insmod fullpath_of_target_module`
+## **Errors**
+1. Error at `make modules`
+```
+make[1]: *** No rule to make target 'certs/rhel.pem', needed by 'certs/x509_certificate_list'.  Stop.
+make: *** [Makefile:1907: certs] Error 2
+```
+- Solution
+```
+scripts/config --disable SYSTEM_TRUSTED_KEYS
+scripts/config --disable SYSTEM_REVOCATION_KEYS
+```
 # **Extra**
 ## **VFS**
 - Virtual file system
