@@ -53,17 +53,35 @@ make modules_install
 make install
 ```
 
-- `lsmod` : List all modules
-- `rmmod` : Remove module
-    - `rmmod [target_module_name]`
-- `modinfo` : Module's information
-## **Load module** 
-- Need to know target module's name
-- `updatedb`
-- `locate [target_modular].ko`
-- `insmod fullpath_of_target_module`
+
+## **Remove & Load module** 
+- Remove
+    1. `lsmod` : List all modules
+        - `modinfo` : Module's information
+    2. `rmmod` : Remove module
+        - `rmmod [target_module_name]`
+- Load : Need to know target module's name
+    1. `updatedb`
+    2. `locate [target_modular].ko`
+    3. `insmod fullpath_of_target_module`
+
 ## **Errors**
-1. Error at `make modules`
+1. Error at `make menuconfig
+```
+***
+*** Compiler is too old.
+***   Your GCC version:    4.8.5
+***   Minimum GCC version: 5.1.0
+***
+scripts/Kconfig.include:44: Sorry, this compiler is not supported.
+```
+- Solution
+```
+yum install -y centos-release-scl
+yum -y install devtoolset-7-gcc devtoolset-7-gcc-c++ devtoolset-7-binutils
+scl enable devtoolset-7 bash
+```
+2. Error at `make modules`
 ```
 make[1]: *** No rule to make target 'certs/rhel.pem', needed by 'certs/x509_certificate_list'.  Stop.
 make: *** [Makefile:1907: certs] Error 2
@@ -73,6 +91,25 @@ make: *** [Makefile:1907: certs] Error 2
 scripts/config --disable SYSTEM_TRUSTED_KEYS
 scripts/config --disable SYSTEM_REVOCATION_KEYS
 ```
+3. Error at `make modules`
+```
+BTF: .tmp_vmlinux.btf: pahole (pahole) is not available
+Failed to generate BTF for vmlinux
+Try to disable CONFIG_DEBUG_INFO_BTF
+```
+- Solution 
+```
+yum install -y dwarves
+```
+4. Error at `make modules`
+```
+FAILED: load BTF from vmlinux: No such file or directory
+make: *** [Makefile:1227: vmlinux] Error 255
+make: *** Deleting file 'vmlinux'
+```
+- Solution 
+    - Go `.config` file and change CONFIG_DEBUG_INFO_BTF from `y` to `n`
+
 # **Extra**
 ## **VFS**
 - Virtual file system

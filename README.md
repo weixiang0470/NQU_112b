@@ -16,7 +16,7 @@
             <li><a href="./Linux3-Automated_Operation/Week1/README.md#update-kernel">Update kernel
                 <ul>
                     <li>
-                        <a href="./Linux3-Automated_Operation/Week1/README.md#load-module">Load module
+                        <a href="./Linux3-Automated_Operation/Week1/README.md#remove--load-module">Load module
                     </li>
                     <li>
                         <a href="./Linux3-Automated_Operation/Week1/README.md#errors">Error & Solution
