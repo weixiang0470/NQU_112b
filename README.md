@@ -5,6 +5,9 @@
   <tr>
     <td><a href="#Linux3">Linux3-Automated Operation</td>
   </tr>
+  <tr>
+    <td><a href="#Linux3">Artificial Intelligence</td>
+  </tr>
 </table>
 
 
@@ -31,6 +34,27 @@
                     </li>
                 </ul></li>
             <li><a href="./Linux3-Automated_Operation/Week1/README.md#vfs">VFS</li>
+        </ol>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><a href="./Artificial_Intelligence/" id="AI">Artificial Intelligence</th>
+  </tr>
+  <tr>
+    <td>Weeks</td>
+    <td>Contents</td>
+  </tr>
+  <tr>
+    <td><a href="./Artificial_Intelligence/Week1/"> Week1</td>
+    <td>
+        <ol>
+            <li><a href="./Artificial_Intelligence/Week1/README.md#偏微分">偏微分</li>
+            <li><a href="./Artificial_Intelligence/Week1/README.md#梯度">梯度</li>
+            <li><a href="./Artificial_Intelligence/Week1/README.md#entropy--crossentropy">Entropy & CrossEntropy</li>
+            <li><a href="./Artificial_Intelligence/Week1/README.md#學習資源">學習資源</li>
         </ol>
     </td>
   </tr>

@@ -13,9 +13,10 @@
     - EX : 函數 f 在 點 (1，2) 的梯度
         - grad(f) = [4,5]
 
-# **Entropy**
+# **Entropy & CrossEntropy**
+- Entropy
 $$H(X) =  - \sum_{x\in X} p(x) *log * p(x)$$
-# **CrossEntropy**
+- CrossEntropy
 $$H(p,q) =  - \sum_{x\in X} p(x) *log *q(x)$$
 
 # **學習資源**
