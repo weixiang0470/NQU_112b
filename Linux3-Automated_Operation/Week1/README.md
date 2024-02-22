@@ -51,8 +51,13 @@ make modules
 make
 make modules_install
 make install
+grub2-mkconfig -o /boot/grub2/grub.cfg
+reboot
 ```
 
+8. After reboot new kernel will show on grub2
+
+![UpkernelDone](Img/UpKernelDone.png)
 
 ## **Remove & Load module** 
 - Remove
