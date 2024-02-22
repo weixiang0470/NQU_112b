@@ -6,7 +6,7 @@
     <td><a href="#Linux3">Linux3-Automated Operation</td>
   </tr>
   <tr>
-    <td><a href="#Linux3">Artificial Intelligence</td>
+    <td><a href="#AI">Artificial Intelligence</td>
   </tr>
 </table>
 
