@@ -66,7 +66,7 @@
   </tr>
   <tr>
     <td>Week 2</td>
-    <td><a href="https://github.com/weixiang0470/ai112b/blob/master/Homework/W2/class_scheduling.py">Homework</td>
+    <td><a href="https://github.com/weixiang0470/ai112b/tree/master/Homework/W2">Homework</td>
   </tr>
 </table>
 
