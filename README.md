@@ -88,6 +88,7 @@
     <ol>
       <li><a href="./Image_Processing/Week2/README.md#dip">DIP</li>
       <li><a href="./Image_Processing/Week2/README.md#opencv">OpenCV</li>
+      <li><a href="./Image_Processing/Implementation.md#basic-dip">Implement of Basic DIP</li>
     </ol>
     </td>
   </tr>
