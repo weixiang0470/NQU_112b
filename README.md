@@ -14,6 +14,9 @@
   <tr>
     <td><a href="#NetworkSecurity">Network Security</td>
   </tr>
+  <tr>
+  <td><a href="">AI Practice</td>
+</tr>
 </table>
 
 
@@ -26,7 +29,7 @@
     <td>Contents</td>
   </tr>
   <tr>
-    <td><a href="./Linux3-Automated_Operation/Week1/"> Week1</td>
+    <td><a href="./Linux3-Automated_Operation/Week1/"> Week 1</td>
     <td>
         <ol>
             <li><a href="./Linux3-Automated_Operation/Week1/README.md#ftp-server-of-this-course">FTP server of this course</li>
@@ -43,6 +46,20 @@
         </ol>
     </td>
   </tr>
+  <tr>
+  <td><a href="./Linux3-Automated_Operation/Week3/">Week 3</td>
+  <td><ol>
+        <li><a href="./Linux3-Automated_Operation/Week3/README.md#ssh-attack">ssh Attacks
+          <ul>
+            <li><a href="./Linux3-Automated_Operation/Week3/README.md#through-hydra">Hydra</li>
+            <li><a href="./Linux3-Automated_Operation/Week3/README.md#through-nmap--cve">nmap&CVE</li>
+            </ul>
+        </li>
+        <li><a href="./Linux3-Automated_Operation/Week3/README.md#rsa-key-login">RSA key login</li>
+        <li><a href="./Linux3-Automated_Operation/Week3/README.md#myfirst-driver">MyFirst Driver</li>
+        <li><a href="./Linux3-Automated_Operation/Week3/README.md#extra">Extra</li>
+  </ol></td>
+  </tr>
 </table>
 
 <table>
@@ -54,7 +71,7 @@
     <td>Contents</td>
   </tr>
   <tr>
-    <td><a href="./Artificial_Intelligence/Week1/"> Week1</td>
+    <td><a href="./Artificial_Intelligence/Week1/">Week 1</td>
     <td>
         <ol>
             <li><a href="./Artificial_Intelligence/Week1/README.md#偏微分">偏微分</li>
@@ -79,7 +96,7 @@
     <td>Contents</td>
   </tr>
   <tr>
-    <td><a href="./Image_Processing/Week1/"> Week1</td>
+    <td><a href="./Image_Processing/Week1/"> Week 1</td>
     <td><a href="./Image_Processing/Week1/README.md#image-vs-computer-vision">Image vs Computer Vision</td>
   </tr>
   <tr>
@@ -103,7 +120,21 @@
     <td>Contents</td>
   </tr>
   <tr>
-    <td><a href="./Network_Security/Week1/"> Week1</td>
+    <td><a href="./Network_Security/Week1/">Week 1</td>
     <td><a href="./Network_Security/Week1/README.md#research-ways">Research ways</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><a href="./AI_Practice/" id="AI_Practice">Network Security</th>
+  </tr>
+  <tr>
+    <td>Weeks</td>
+    <td>Contents</td>
+  </tr>
+  <tr>
+    <td><a href="./AI_Practice/Week3/"> Week 3</td>
+    <td><a href="./AI_Practice/Week3/README.md#common-machine-learning">Common Machine Learning</td>
   </tr>
 </table>
