@@ -22,7 +22,7 @@ grayImg=cv2.cvtColor(img,cv2.COLOR_RGB2GRAY)
 ```
 ConcatImage=cv2.hconcat([img1,img2,img3]) 
 ```
-- Turn gray image into binary image with more than 50 scale turn into white and others turn into black.
+- Turn gray image into binary image with more than 50 scale turn into white(255) and others turn into black.
 ```
 thresh,binaryImg=cv2.threshold(grayImg,50,255,cv2.THRESH_BINARY) 
 ```
@@ -54,3 +54,26 @@ mergeImg=cv2.merge([b,g,r])
 zero=np.zeros((img.shape[0],img.shape[1]),dtype="uint8") 
 rImg=cv2.merge([zero,zero,r]) 
 ```
+
+# **Week 3**
+## Changing brightness of image
+```
+colorImg=np.float32(img.copy())
+colorImg=colorImg-50
+colorImg[colorImg<0]=0
+colorImg=np.uint8(colorImg)
+```
+- We can use `cv2.split()` to get R,G,B and minus R of it to reduce red color of the image, then use `cv2.merge()` to get result
+
+## **Negative image**
+```
+img=255-img
+```
+## **Gamma correction**
+```
+def adjust_gamma(image, gamma):
+	lookupTable = np.array([((i / 255.0) ** gamma) * 255 
+	                        for i in np.arange(0, 256)]).astype("uint8")
+	return cv2.LUT(image, lookupTable)
+```
+- `cv2.LUT` give return of `image` according to `lookupTable`

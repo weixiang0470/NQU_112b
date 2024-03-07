@@ -29,7 +29,7 @@
     <td>Contents</td>
   </tr>
   <tr>
-    <td><a href="./Linux3-Automated_Operation/Week1/"> Week 1</td>
+    <td> Week 1</td>
     <td>
         <ol>
             <li><a href="./Linux3-Automated_Operation/Week1/README.md#ftp-server-of-this-course">FTP server of this course</li>
@@ -47,7 +47,7 @@
     </td>
   </tr>
   <tr>
-  <td><a href="./Linux3-Automated_Operation/Week3/">Week 3</td>
+  <td>Week 3</td>
   <td><ol>
         <li><a href="./Linux3-Automated_Operation/Week3/README.md#ssh-attack">ssh Attacks
           <ul>
@@ -71,7 +71,7 @@
     <td>Contents</td>
   </tr>
   <tr>
-    <td><a href="./Artificial_Intelligence/Week1/">Week 1</td>
+    <td>Week 1</td>
     <td>
         <ol>
             <li><a href="./Artificial_Intelligence/Week1/README.md#偏微分">偏微分</li>
@@ -85,6 +85,15 @@
     <td>Week 2</td>
     <td><a href="https://github.com/weixiang0470/ai112b/tree/master/Homework/W2">Homework</td>
   </tr>
+  <tr>
+    <td>Week 3</td>
+    <td>
+    <ol>
+      <li><a href="./Artificial_Intelligence/Week3/README.md#旅行推銷員">旅行推銷員</li>
+      <li><a href="https://github.com/weixiang0470/ai112b/tree/master/Homework/W3">Python practical</li>
+      </ol>
+    </td>
+  </tr>
 </table>
 
 <table>
@@ -96,11 +105,11 @@
     <td>Contents</td>
   </tr>
   <tr>
-    <td><a href="./Image_Processing/Week1/"> Week 1</td>
+    <td> Week 1</td>
     <td><a href="./Image_Processing/Week1/README.md#image-vs-computer-vision">Image vs Computer Vision</td>
   </tr>
   <tr>
-    <td><a href="./Image_Processing/Week2/">Week 2</td>
+    <td>Week 2</td>
     <td>
     <ol>
       <li><a href="./Image_Processing/Week2/README.md#dip">DIP</li>
@@ -108,6 +117,23 @@
       <li><a href="./Image_Processing/Implementation.md#basic-dip">Implement of Basic DIP</li>
     </ol>
     </td>
+  </tr>
+  <tr>
+  <td>Week 3</td>
+  <td><ol>
+    <li><a href="./Image_Processing/Week3/README.md#取樣與量化">取樣與量化</li>
+    <li><a href="./Image_Processing/Week3/README.md#摩爾紋">摩爾紋</li>
+    <li><a href="./Image_Processing/Week3/README.md#距離測量">距離測量</li>
+    <li><a href="./Image_Processing/Week3/README.md#灰階">灰階</li>
+    <li><a href="./Image_Processing/Implementation.md#week-3">實作
+      <ul>
+        <li><a href="./Image_Processing/Implementation.md#changing-brightness-of-image">Change brightness of image</li>
+        <li><a href="./Image_Processing/Implementation.md#negative-image">Negative image</li>
+        <li><a href="./Image_Processing/Implementation.md#gamma-correction">Gamma correction</li>
+      </ul>
+    </li>
+  </ol>
+  </td>
   </tr>
 </table>
 
@@ -120,7 +146,7 @@
     <td>Contents</td>
   </tr>
   <tr>
-    <td><a href="./Network_Security/Week1/">Week 1</td>
+    <td>Week 1</td>
     <td><a href="./Network_Security/Week1/README.md#research-ways">Research ways</td>
   </tr>
 </table>
@@ -134,7 +160,7 @@
     <td>Contents</td>
   </tr>
   <tr>
-    <td><a href="./AI_Practice/Week3/"> Week 3</td>
+    <td> Week 3</td>
     <td><a href="./AI_Practice/Week3/README.md#common-machine-learning">Common Machine Learning</td>
   </tr>
 </table>
