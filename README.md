@@ -149,6 +149,20 @@
     <td>Week 1</td>
     <td><a href="./Network_Security/Week1/README.md#research-ways">Research ways</td>
   </tr>
+  <tr>
+    <td>Week 3</td>
+    <td>
+      <ol>
+        <li><a href="./Network_Security/Week3/README.md#steps-of-attack">Step of attacks</li>
+        <li><a href="./Network_Security/Week3/README.md#network-security">Network Security</li>
+        <li><a href="./Network_Security/Week3/README.md#information-collection">Information Collection</li>
+        <li><a href="./Network_Security/Week3/README.md#arp-attack">ARP attack</li>
+        <li><a href="./Network_Security/Week3/README.md#hide-in-the-internet">Hiding in internet</li>
+        <li><a href="./Network_Security/Week3/README.md#nat">NAT</li>
+        <li><a href="./Network_Security/Week3/README.md#tools">Tools</li>
+      </ol>    
+    </td>
+  </tr>
 </table>
 
 <table>
