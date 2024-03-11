@@ -167,7 +167,7 @@
 
 <table>
   <tr>
-    <th colspan="2"><a href="./AI_Practice/" id="AI_Practice">Network Security</th>
+    <th colspan="2"><a href="./AI_Practice/" id="AI_Practice">AI Practical</th>
   </tr>
   <tr>
     <td>Weeks</td>
