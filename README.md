@@ -15,7 +15,7 @@
     <td><a href="#NetworkSecurity">Network Security</td>
   </tr>
   <tr>
-  <td><a href="">AI Practice</td>
+  <td><a href="#AI_Practice">AI Practice</td>
 </tr>
 </table>
 
