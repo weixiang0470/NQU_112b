@@ -17,6 +17,9 @@
   <tr>
   <td><a href="#AI_Practice">AI Practice</td>
 </tr>
+<tr>
+  <td><a href="">Network Analysis</td>
+</tr>
 </table>
 
 
@@ -94,6 +97,16 @@
       </ol>
     </td>
   </tr>
+  <tr>
+    <td> Week 4 </td>
+    <td>
+      <ol>
+        <li><a href="./Artificial_Intelligence/Week4/README.md#優化">優化</li>
+        <li><a href="./Artificial_Intelligence/Week4/README.md#搜尋">搜尋</li>
+        <li><a href="">線性規劃(作業)</li>
+      </ol>
+    </td>
+  </tr>
 </table>
 
 <table>
@@ -134,6 +147,16 @@
     </li>
   </ol>
   </td>
+  </tr>
+  <tr>
+    <td>Week 4</td>
+    <td>
+      <ol>
+        <li><a href="./Image_Processing/Week4/README.md#大小圖轉換">大小圖轉換</li>
+        <li><a href="./Image_Processing/Week4/README.md#histogram-processing">Histogram Processing</li>
+        <li><a href="./Image_Processing/Implementation.md#week-4">實作</li>
+      </ol>
+    </td>
   </tr>
 </table>
 
@@ -176,5 +199,27 @@
   <tr>
     <td> Week 3</td>
     <td><a href="./AI_Practice/Week3/README.md#common-machine-learning">Common Machine Learning</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2"><a href="./Network_Anl/" id="Network_Anal">Network Analysis</th>
+  </tr>
+  <tr>
+    <td>Weeks</td>
+    <td>Contents</td>
+  </tr>
+  <tr>
+    <td> Week 2</td>
+    <td><a href="./Network_Anl/Week2/README.md#wireshark">Wireshark</td>
+  </tr>  
+  <tr>
+    <td> Week 3</td>
+    <td><a href="./Network_Anl/Week3/README.md#1254">1 & 254</td>
+  </tr>
+    <tr>
+    <td> Week 4</td>
+    <td><a href="./Network_Anl/Week4/README.md#dhcp">DHCP</td>
   </tr>
 </table>

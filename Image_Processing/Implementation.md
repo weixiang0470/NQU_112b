@@ -77,3 +77,33 @@ def adjust_gamma(image, gamma):
 	return cv2.LUT(image, lookupTable)
 ```
 - `cv2.LUT` give return of `image` according to `lookupTable`
+
+# **Week 4**
+- Sampling （馬賽克）
+```
+#將圖像解析度縮小
+reImg10 = cv2.resize(img.copy(),(32,32), interpolation=cv2.INTER_NEAREST)
+
+#將圖像解析度調大
+reImg20 = cv2.resize(reImg10.copy(),(256,256), interpolation=cv2.INTER_NEAREST)
+```
+- Quantilization 色階調整, 31 階
+```
+qImg1 = np.float32(img.copy())
+qImg1 = (qImg1/255) * 31
+qImg1 = np.uint8(qImg1) / 31 * 255
+```
+- Histogram Processing, 平均化所有顏色分佈(0~255)
+```
+b,g,r=cv2.split(img.copy())
+
+#平均化顏色分佈
+equalizeImg_r=cv2.equalizeHist(r.copy())
+equalizeImg_g=cv2.equalizeHist(g.copy())
+equalizeImg_b=cv2.equalizeHist(b.copy())
+
+equalize_Img = cv2.merge([equalizeImg_b,equalizeImg_g,equalizeImg_r])
+
+plt.hist(equalize_Img.ravel(),256,[0,256]) #畫出顏色分佈
+plt.show()
+```
