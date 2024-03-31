@@ -103,7 +103,7 @@
       <ol>
         <li><a href="./Artificial_Intelligence/Week4/README.md#優化">優化</li>
         <li><a href="./Artificial_Intelligence/Week4/README.md#搜尋">搜尋</li>
-        <li><a href="">線性規劃(作業)</li>
+        <li><a href="https://github.com/weixiang0470/ai112b/tree/master/Homework/W4">線性規劃(作業)</li>
       </ol>
     </td>
   </tr>

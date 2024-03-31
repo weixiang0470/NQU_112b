@@ -107,3 +107,34 @@ equalize_Img = cv2.merge([equalizeImg_b,equalizeImg_g,equalizeImg_r])
 plt.hist(equalize_Img.ravel(),256,[0,256]) #畫出顏色分佈
 plt.show()
 ```
+
+# **Week 5**
+- Smooth Filter/Blur Filter
+```
+kernel = np.array([[1,1,1],[1,1,1],[1,1,1]])/9
+smoothImg=cv2.filter2D(src=img.copy(),ddepth=-1,kernel=kernel) #Add value of 9 pixels and divide by 9, then put it back to middle pixel
+
+blurImg=cv2.blur(img.copy(),(3,3)) #Use 3*3 mask to do blur
+```
+- Subtraction
+```
+Gray_Image = cv2.cvtColor(Colour_Image,cv2.COLOR_RGB2GRAY)
+
+Subtract_Image = cv2.absdiff(Gray_Image1,Gray_Image2)
+```
+- Create mask image
+```
+ret,Mask_Image=cv2.threshold(Subtract_Image,40,255,cv2.THRESH_BINARY)
+```
+- AND with mask image
+```
+Result_Image = cv2.bitwise_and(Colour_Image,Colour_Image,mask=Mask_Image)
+```
+- Reverse image
+```
+Mask_Image = cv2.bitwise_not(Mask_Image)
+```
+- Combined images
+```
+Final_Image = Result_Image1 + Result_Image2
+```

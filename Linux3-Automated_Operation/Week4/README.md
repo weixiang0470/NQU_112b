@@ -7,7 +7,7 @@
 ```
 sudo systemctl status sshd
 ```
-2. Remove all files in `.ssh` to have a clean environment
+2. Remove all files in `.ssh` to have a clean environment, at home directory
 ```
 rm -rf .ssh
 ```
@@ -37,6 +37,18 @@ chmod 600 authorized_keys
 ## **Client side**
 ### **Windows**
 1. Install putty
+2. Open Putty key generator and click Generate, copy the public key into server's `authorized_keys`, and click **Save private key**
+
+![](img/Linux3/putty0.png)
+3. Enter the server's ip address
+
+![](img/Linux3/putty1.png)
+3. Go to SSH -> Auth and choose the privated saved in step 2
+
+![](img/Linux3/putty2.png)
+4. Click open and enter user and successfully login without password
+
+![](img/Linux3/putty3.png)
 ### **Centos & Mac**
 1. Remove `.ssh` folder and all files inside
 ```
@@ -124,12 +136,34 @@ systemctl restart httpd
 ```
 ## **Client side**
 ### **Windows**
-1. 
+1. Right click and choose `Map network drive..` 
+
+![](img/Linux3/win_webdav0.png)
+2. Enter server's address
+
+![](img/Linux3/win_webdav1.png)
+3. done
+
+![](img/Linux3/win_webdav2.png)
 ### **Centos**
 1. Install needed tool
 ```
 yum -y install davfs2
 ```
+2. Create a folder to mount
+```
+mkdir -p ./cloud
+```
+3. Mount with the webdav
+```
+mount -t davfs http://192.168.21.129/webdav ./cloud
+```
+
+![](img/Linux3/davfs0.png)
+4. done
+
+![davfs_done](img/Linux3/davfs1.png)
+
 ### **Mac**
 1. Open **Finder**, choose **前往**, **連接伺服器**, and input the location of webdav server
 ![](img/mac2webd1.png)
@@ -193,15 +227,19 @@ sed -e 's/.*/\U&/' input
 - `\U&` : make to upper case
     - `\U` : Change to upper case
     - `&` : Same words/characters as origin
-
+```
+sed '1itest' input
+```
+- Insert `test` to file `input` at first line
+- `1i` : Insert into first line, `2i` : insert at second line
 ```
 sed -e '1a I had a pen' input
 ```
-- `1a` : Insert `I had a pen` after first line of input file
+- `1a` : Insert `I had a pen` after first line of `input` file
 ```
 sed -e '1c I had a pen' input
 ```
-- `1c` : Replace first line with `I had a pen` of input file
+- `1c` : Replace first line with `I had a pen` of `input` file
 - Example:
 ```
 [root@centos9-2 user]# cat input
@@ -218,3 +256,22 @@ I had a pen
 Second line
 Third line
 ```
+- Example end
+```
+echo "123abc" | sed -r "s#(^.)(.)(.*)#\2\1\3#"
+```
+- Rearrange pattern (1,2,3) to pattern (2,1,3)
+![sed](img/sed.png)
+```
+sed "/aaa/p" demo
+```
+- If match `aaa` in file `demo` and print it out when matched.
+```
+sed -n "/aaa/p" demo
+```
+- Only print out `aaa` if matched in file `demo`
+```
+sed -f sedscript demo
+```
+- Use `sedscript` to apply on file `demo`
+- `-f` : specific sed's script file
