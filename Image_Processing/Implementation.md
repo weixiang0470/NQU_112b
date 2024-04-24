@@ -138,3 +138,112 @@ Mask_Image = cv2.bitwise_not(Mask_Image)
 ```
 Final_Image = Result_Image1 + Result_Image2
 ```
+# **Week 6**
+- Smooth filter 
+```
+kernel=np.array([
+	[1,1,1],
+	[1,1,1],
+	[1,1,1]
+])/9
+
+Smooth_Img=cv2.filter2D(src=Origin_img,ddepth=-1,kernel=kernel)
+```
+- Smooth filter with cv2.blur
+```
+Smooth_img1 = cv2.blur(Origin_img,(5,5))
+Smooth_img2 = cv2.blur(Origin_img,(7,7))
+```
+- Gaussian blur
+```
+Gaussian_blur_img1 = cv2.GaussianBlur(Origin_img,(5,5),0)
+Gaussian_blur_img2 = cv2.GaussianBlur(Origin_img,(7,7),0)
+```
+- Smooth filter with veriant type
+```
+kernel=np.array([
+	[1,2,1],
+	[2,4,2],
+	[1,2,1]
+])/16
+
+Smooth_Img=cv2.filter2D(src=Origin_img,ddepth=-1,kernel=kernel)
+```
+- Median blur, can clean small dot on image(胡椒鹽), create water color painting effect 
+```
+Median_img = cv2.medianBlur(Origin_img,3)
+Median_img = cv2.medianBlur(Origin_img,5)
+```
+- Laplacian filter, for sharpen image
+```
+kernel=np.array([
+	[0,1,0],
+	[1,-4,1],
+	[0,1,0]
+])
+
+kernel=np.array([
+	[0,-1,0],
+	[-1,4,-1],
+	[0,-1,0]
+])
+
+kernel=np.array([
+	[0,-1,0],
+	[-1,5,-1],
+	[0,-1,0]
+])
+
+kernel=np.array([
+	[1,1,1],
+	[1,-8,1],
+	[1,1,1]
+])
+
+kernel=np.array([
+	[-1,-1,-1],
+	[-1,8,-1],
+	[-1,-1,-1]
+])
+
+kernel=np.array([
+	[-1,-1,-1],
+	[-1,9,-1],
+	[-1,-1,-1]
+])
+Laplacian_img = cv2.filter2D(src=Origin_img,ddepth=-1,kernel=kernel)
+```
+- Unsharping image
+```
+Gaussian_img = cv2.GaussianBlur(Origin_img,(5,5),0)
+Unsharping_img = cv2.addWeighted(Origin_img,2.0,Gaussian_img,-1.0,0)
+```
+- High boost image
+```
+kernel=np.array([
+	[-1,-1,-1],
+	[-1,9.5,-1],
+	[-1,-1,-1]
+])
+
+Highboost_img=cv2.filter2D(src=Origin_img,ddepth=-1,kernel=kernel)
+```
+- First derivatives(the gradient),sobel_x and sobel_y, on gray image to find horizon and vertical side
+```
+kernel_x = np.array([
+	[-1,-2,-1],
+	[0,0,0],
+	[1,2,1]
+])
+
+kernel_y = np.array([
+	[-1,0,1],
+	[-2,0,2],
+	[-1,0,1]
+])
+
+Sobel_x_img = cv2.filter2D(src=Origin_img,ddepth=-1,kernel=kernel_x)
+Sobel_y_img = cv2.filter2D(src=Origin_img,ddepth=-1,kernel=kernel_y)
+
+Sobel_img = cv2.addWeighted(Sobel_x_img,1,Sobel_y_img,1,0)
+```
