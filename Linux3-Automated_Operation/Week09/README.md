@@ -53,14 +53,15 @@ FROM centos:centos7
 RUN yum -y install httpd
 EXPOSE 80
 ```
-2. 
+2. Build docker image with above `Dockerfile`
 ```
 docker build -t centos7:web .
 ```
-3. 
+3. Create a file `create_web.sh` and insert second code
 ```
 vim create_web.sh
-
+```
+```
 for i in {1..5}
 do
     mkdir -p /web$i
@@ -69,10 +70,10 @@ do
     docker run -d -p $portno:80 -v /web$i:/var/www/html centos7:web /usr/sbin/apachectl -DFOREGROUND
 done
 ```
-4. 
+4. Give `create_web.sh` executable permission, and execute it
 ```
-chmod +x create-web.sh 
-./create-web.sh 
+chmod +x create_web.sh 
+./create_web.sh 
 ```
 ![created_web1-5](img/created_web1-5.png)
 ## **Haproxy on linux**
@@ -133,10 +134,13 @@ backend myservers
     server server4 192.168.1.139:8004
     server server5 192.168.1.139:8005
 ```
-6. 
+6. Run docker haproxy image
+- Windows :
 ```
 docker run -d -p 8080:8080 --name my-haproxy -v /root/testdocker/haproxy:/usr/local/etc/haproxy:ro haproxy
 ```
+- Macbook Air M1 : 
+    - Not found suitable image yet
 
 # **Docker network**
 - `docker0` network
