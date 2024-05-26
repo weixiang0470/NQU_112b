@@ -1,0 +1,24 @@
+# **Morphological**
+- Structuring Element
+    - circle, triangle, self-define, ...
+- Erosion（侵蝕）
+    - $A \ominus B$
+    - $ \subset A$
+- Dilation（擴張）
+    - $A \oplus B$
+    - $ \bigcap \not= 0$
+- Opening
+    - Do **erosion** then do **dilation**
+    - B need to transform, to make sure image can get back to original after erosion and dilation
+    - ex: `|*| |`->`| |*|`
+    - 可用來**去雜訊**，但會將一些洞也去掉
+- Closing
+    - Do **dilation** then do **erosion**
+    - 用來**補縫與補洞**，但會增加雜訊
+- Top-hats
+    - White top-hats : Original-Img - Opening-Img, 找**雜訊**
+    - Black top-hats : CLosing-Img - Original-Img, 找**洞/縫**
+- Contrast Enhancement
+    - Contrast : Gap between black and white
+    - id + White-top-hats - Black-top-hats
+    - 3id - Opening-Img - Closing-Img

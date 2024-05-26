@@ -3,6 +3,10 @@
 ```
 curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh && sh quick_start.sh
 ```
+2. Login vis host browser
+```
+http://192.168.1.60:26243
+```
 - Login done
     - ![1panel_login](img/1panel_login.png)
 
@@ -91,7 +95,7 @@ This node joined a swarm as a worker.
 ```
 docker pull redis:7.0
 ```
-2. On VM-1 run command below
+2. On VM-1 run command below, need to `docker pull redis:7.0` on all vm 
 ```
 docker service create   --replicas 3   --name redis   --update-delay 10s   redis:7.0
 ```

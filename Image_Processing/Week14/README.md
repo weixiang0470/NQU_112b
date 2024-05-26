@@ -1,0 +1,11 @@
+# **飆機器人演講**
+- Ros2 : 定點送餐
+- OpenVino : 邊緣AI，有免費的優化模型
+- OpenPose :骨架偵測，可用於多人
+- GPT : Generative, Pre-trained, Transformer
+    - 第二階段(fine-tune), 對某些特定場景去做訓練
+- Diffusion models : 擴散模型
+- OpenVoice
+    - 可複製聲音的AI，利用Transformer學習音頻特性，生成你的聲音
+    - TTS 模型：文字轉語音
+    - AutoEncoder ： 將前面的聲音特性轉成參考檔
