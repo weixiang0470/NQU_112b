@@ -77,14 +77,15 @@ chmod +x create_web.sh
 ```
 ![created_web1-5](img/created_web1-5.png)
 ## **Haproxy on linux**
-5. 
+5. Install haproxy
 ```
 yum install -y haproxy
 ```
-6. 
+6. Create and edit configuration file of haproxy
 ```
 vim /etc/haproxy/haproxy.cfg
-
+```
+```
 frontend http_front
     bind 0.0.0.0:8080
     default_backend myservers
@@ -97,7 +98,7 @@ backend myservers
     server server4 127.0.0.1:8004
     server server5 127.0.0.1:8005
 ```
-7. 
+7. Start haproxy
 ```
 systemctl start haproxy
 ```
@@ -109,12 +110,13 @@ systemctl start haproxy
 ```
 ifconfig
 ```
-5. 
+5. Create and edit haproxy configuration file
 ```
 cd mkdir haproxy -p
 cd haproxy
 vim haproxy.cfg
-
+```
+```
 defaults
     mode http
     timeout client 10s

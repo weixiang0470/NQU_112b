@@ -3,17 +3,17 @@
 - 較侷限的問題就有問題， 例如：金門大學資訊工程學系的老師有誰？金門大學的校長是誰？
     - 會回答錯誤等
 
-1. 
+1. Clone dialoqbase from github
 ```
 git clone https://github.com/n4ze3m/dialoqbase.git
 ```
-2. 
+2. Paste api-key into `.env`
 ```
 cd dialoqbase/docker/
 vim .env
 # paste your openai api-key
 ```
-3. 
+3. Start with docker-compose
 ```
 docker-compose up -d
 docker-compose ps 
@@ -36,7 +36,7 @@ http://192.168.1.77:3000/#/login
 sudo cd /
 sudo mkdir mydb myphp
 ```
-2. 
+2. Add export files
 ```
 vim /etc/exports
 ```
@@ -44,7 +44,7 @@ vim /etc/exports
 /mydb/ 192.168.1.0/24(rw,sync,no_root_squash,no_all_squash)
 /myphp/ 192.168.1.0/24(rw,sync,no_root_squash,no_all_squash)
 ```
-3. 
+3. Start nfs
 ```
 sudo systemctl restart rpcbind
 sudo systemctl restart nfs-server
@@ -59,7 +59,7 @@ Export list for localhost:
 /myphp/ 192.168.1.0/24
 /mydb/  192.168.1.0/24
 ```
-4. 
+4. Initial docker swarm
 ```
 docker swarm init
 ```
@@ -74,18 +74,18 @@ To add a worker to this swarm, run the following command:
 To add a manager to this swarm, run 'docker swarm join-token manager' and follow the instructions.
 ```
 ## **Worker node 1&2**
-5. 
+5. Start and mount on nfs
 ```
 sudo systemctl restart rpcbind
 sudo mount -t nfs 192.168.1.77:/mydb /mydb
 sudo mount -t nfs 192.168.1.77:/myphp /myphp
 ```
-6. 
+6. Join into docker swarm
 ```
 docker swarm join --token SWMTKN-1-3uu6f1naug4srej0vp98nkxx326q6ytmex7knxexdn6z13lah6-8vi8n8pe7cxzww3d6hsyg0o8r 192.168.1.77:2377
 ```
 ## **Master node**
-7. 
+7. Create docker network 
 ```
 docker network create -d overlay mynet
 docker node update --availability drain centos9-1
@@ -94,7 +94,7 @@ docker node update --availability drain centos9-1
 ```
 deex63jqzfej   mynet             overlay   swarm
 ```
-8. 
+8. Create docker service `mydb`
 ```
 docker service create --name mydb --network mynet --mount type=bind,source=/mydb,target=/var/lib/mysql --env MYSQL_ROOT_PASSWORD=123456 --publish published=3306,target=3306 mysql
 ```

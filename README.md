@@ -127,6 +127,62 @@
     </ol>
   </td>
   </tr>
+  <tr>
+  <td>Week 11</td>
+  <td>
+  <ol>
+  <li><a href="./Linux3-Automated_Operation/Week11/README.md#ml-with-vm">ML with VM</li>
+  <li><a href="./Linux3-Automated_Operation/Week11/README.md#ml-with-docker">ML with Docker</li>
+  <li><a href="./Linux3-Automated_Operation/Week11/README.md#gitlab-with-docker">Gitlab with Docker</li>
+  </ol>
+  </td>
+  </tr>
+  <tr>
+  <td>Week 12</td>
+  <td>
+  <ol>
+    <li><a href="./Linux3-Automated_Operation/Week12/README.md#docker-swarm">Docker-swarm</li>
+    <li><a href="./Linux3-Automated_Operation/Week12/README.md#docker-compose">Docker Compose</li>
+    <li><a href="./Linux3-Automated_Operation/Week12/README.md#extra">Extra</li>
+  </ol>
+  </td>
+  </tr>
+  <tr>
+  <td>Week 13</td>
+  <td>
+    <ol>
+      <li><a href="./Linux3-Automated_Operation/Week13/README.md#1panel">1Panel</li>
+      <li><a href="./Linux3-Automated_Operation/Week13/README.md#docker-swarm">Docker-swarm</li>
+    </ol>
+  </td>
+  </tr>
+  <tr>
+  <td>Week 14</td>
+  <td>
+    <ol>
+      <li><a href="./Linux3-Automated_Operation/Week14/README.md#chatgpt-dialoqbase">Chatgpt-dialoqbase</li>
+      <li><a href="./Linux3-Automated_Operation/Week14/README.md#docker-swarm-with-db">Docker-swarm with DB</li>
+      <li><a href="./Linux3-Automated_Operation/Week14/README.md#dockerfile">Dockerfile</li>
+    </ol>
+  </td>
+  </tr>
+  <tr>
+  <td>Week 15</td>
+  <td>
+    <ol>
+      <li><a href="./Linux3-Automated_Operation/Week15/README.md#ansible">Ansible</li>
+    </ol>
+  </td>
+  </tr>
+  <tr>
+  <td>Week 16</td>
+  <td>
+    <ol>
+      <li><a href="./Linux3-Automated_Operation/Week16/README.md#ansible-with-ubuntu">Ansible</li>
+      <li><a href="./Linux3-Automated_Operation/Week16/README.md#ansible-commands">Ansible commands</li>
+    </ol>
+  </td>
+  </tr>
 </table>
 
 <table>
